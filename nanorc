@@ -23,10 +23,11 @@ include "/usr/share/nano/css.nanorc"
 include "/usr/share/nano/html.nanorc"
 
 ## Markdown
-include "~/.nano/markdown.nanorc"
+include "~/config/markdown.nanorc"
 
 ## Debian
 include "/usr/share/nano/debian.nanorc"
+
 ## Java
 include "/usr/share/nano/java.nanorc"
 

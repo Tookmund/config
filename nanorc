@@ -1,0 +1,34 @@
+set multibuffer
+set autoindent
+
+## .nanorc
+include "/usr/share/nano/nanorc.nanorc"
+
+## Ruby
+include "/usr/share/nano/ruby.nanorc"
+
+## C/C++
+include "/usr/share/nano/c.nanorc"
+
+## Python
+include "/usr/share/nano/python.nanorc"
+
+## Bourne shell scripts
+include "/usr/share/nano/sh.nanorc"
+
+## CSS
+include "/usr/share/nano/css.nanorc"
+
+## HTML
+include "/usr/share/nano/html.nanorc"
+
+## Markdown
+include "~/.nano/markdown.nanorc"
+
+## Debian
+include "/usr/share/nano/debian.nanorc"
+## Java
+include "/usr/share/nano/java.nanorc"
+
+## Assembler
+include "/usr/share/nano/asm.nanorc"

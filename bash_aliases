@@ -11,6 +11,7 @@ alias agdu="sudo apt-get dist-upgrade"
 alias agug="sudo apt-get upgrade"
 alias acs="apt-cache search"
 alias agi="sudo apt-get install"
+alias agp="sudo apt-get purge"
 
 alias x='startx'
 

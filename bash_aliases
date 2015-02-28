@@ -12,7 +12,8 @@ alias agug="sudo apt-get upgrade"
 alias acs="apt-cache search"
 alias agi="sudo apt-get install"
 alias agp="sudo apt-get purge"
-
+alias agar="sudo apt-get autoremove"
+alias agac="sudo apt-get autoclean"
 alias x='startx'
 
-alias backup='sudo backupninja -n'
+alias backup='sudo backupninja -d -n'

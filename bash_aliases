@@ -1,4 +1,4 @@
-alias lock='xscreensaver-command -lock'
+#alias lock='xscreensaver-command -lock'
 
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
 
@@ -15,3 +15,4 @@ alias agug="sudo apt-get upgrade"
 alias acs="apt-cache search"
 alias agi="sudo apt-get install"
 alias agp="sudo apt-get purge"
+alias agar="sudo apt-get autoremove"

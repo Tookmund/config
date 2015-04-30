@@ -3,10 +3,7 @@
 alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
 
 alias ll='ls -l'
-
 alias la='ls -a'
-
-alias x='startx'
 
 #make apt easier to type
 alias agu="sudo apt-get update"
@@ -16,3 +13,5 @@ alias acs="apt-cache search"
 alias agi="sudo apt-get install"
 alias agp="sudo apt-get purge"
 alias agar="sudo apt-get autoremove"
+alias agac="sudo apt-get autoclean"
+alias x='startx'

@@ -1,0 +1,22 @@
+# Make apt easier to type
+# Use apt if installed
+
+if hash apt
+then
+	alias aptu="sudo apt update"
+	alias aptdu="sudo apt full-upgrade"
+	alias aptug="sudo apt upgrade"
+	alias apts="sudo apt search"
+	alias apti="sudo apt install"
+
+else
+	alias aptu="sudo apt-get update"
+	alias aptdu="sudo apt-get dist-upgrade"
+	alias aptug="sudo apt-get upgrade"
+	alias apts="apt-cache search"
+	alias apti="sudo apt-get install"
+fi
+
+alias aptp="sudo apt-get purge"
+alias aptar="sudo apt-get autoremove"
+alias aptac="sudo apt-get autoclean"

@@ -6,7 +6,8 @@ alias ll='ls -l'
 alias la='ls -a'
 
 alias x='startx'
-
+alias suspend='sudo pm-suspend'
+alias shutdown='sudo shutdown -hP now'
 if [ -f ~/config/bash_apt ]
 then
 	. ~/config/bash_apt

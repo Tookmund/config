@@ -22,9 +22,6 @@ include "/usr/share/nano/css.nanorc"
 ## HTML
 include "/usr/share/nano/html.nanorc"
 
-## Markdown
-include "~/config/markdown.nanorc"
-
 ## Debian
 include "/usr/share/nano/debian.nanorc"
 
@@ -33,3 +30,19 @@ include "/usr/share/nano/java.nanorc"
 
 ## Assembler
 include "/usr/share/nano/asm.nanorc"
+
+## Makefile
+include "/usr/share/nano/makefile.nanorc"
+
+## Patchfile
+include "/usr/share/nano/patch.nanorc"
+
+
+## Markdown
+include "~/config/markdown.nanorc"
+
+## JavaScript
+include "~/config/javascript.nanorc"
+
+## Conf
+include "~/config/conf.nanorc"

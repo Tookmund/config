@@ -1,7 +1,7 @@
-rxvt-unicode -fg white -bg black &
-xclock -digital &
-wmbattery -w 1 &
+# Configured for a 1920x1080 display
+xclock -digital -g +1500+1040 &
+wmbattery -w 1 -g +1850+1020 &
 sh $HOME/.fehbg &
 xscreensaver &
-xsysinfo &
-exec w9wm -term urxvt
+xsysinfo -g +0+850 &
+exec rio -term st

@@ -3,5 +3,6 @@ xclock -digital -g +1500+1040 &
 wmbattery -w 1 -g +1850+1020 &
 sh $HOME/.fehbg &
 xscreensaver &
-xsysinfo -g +0+850 &
-exec rio -term st
+9menu -geometry +0+1025 -file $HOME/config/9menu
+#xsysinfo -g +0+850 &
+exec /home/jacob/coding/9wm/9wm -term st

@@ -6,7 +6,7 @@ then
 	alias aptu="sudo apt update"
 	alias aptdu="sudo apt full-upgrade"
 	alias aptug="sudo apt upgrade"
-	alias apts="sudo apt search"
+	alias apts="apt search"
 	alias apti="sudo apt install"
 
 else

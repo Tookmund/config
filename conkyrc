@@ -1,9 +1,10 @@
 own_window yes
 own_window_type override
 alignment bottom_left
+gap_y 75  #4 9menu entries 
 
 TEXT
-
+${color CC9900}CPU ${hr 2}$color
 Total CPU: ${cpu cpu0}%
 ${color 597DB2}${cpubar}$color
 ${cpugraph 000000 597DB2}

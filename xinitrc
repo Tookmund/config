@@ -4,5 +4,5 @@ wmbattery -w 1 -g +1850+1020 &
 sh $HOME/.fehbg &
 xscreensaver &
 9menu -geometry +0+1010 -file $HOME/config/9menu &
-conky &
+xsysinfo -g +0+780 &
 exec 9wm -term st

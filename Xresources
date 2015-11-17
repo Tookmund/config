@@ -1,0 +1,15 @@
+! Borrowed from https://woozle.org/neale/papers/plan9.html
+
+! Make scrollbars prettier
+*Scrollbar.thickness: 10
+*Scrollbar.thumb: None
+*Scrollbar.foreground: gray80
+*Scrollbar.background: gray50
+*Scrollbar.borderWidth: 3
+*ScrollBarBorder: 0
+
+! Scroll like 9term and acme
+*Scrollbar.translations: #override\
+    <Btn1Down>: StartScroll(Backward) \n\
+    <Btn3Down>: StartScroll(Forward) \n\
+    <BtnUp>: NotifyScroll(Proportional) EndScroll()

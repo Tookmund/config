@@ -1,6 +1,9 @@
 set multibuffer
 set autoindent
 
+## Trailing whitespace
+color ,green "[[:space:]]+$"
+
 ## .nanorc
 include "/usr/share/nano/nanorc.nanorc"
 

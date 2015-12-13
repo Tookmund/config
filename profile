@@ -1,3 +1,4 @@
 . $HOME/config/aliases
-PAGER=cat
-export $PAGER
+GOPATH=$HOME/coding/go
+PATH=$PATH:$GOPATH/bin
+export GOPATH PATH

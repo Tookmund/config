@@ -1,3 +1,4 @@
+. $HOME/config/profile
 # Configured for a 1920x1080 display
 xclock -digital -g +1560+1040 &
 wmbattery -w 1 -g +1850+1020 &

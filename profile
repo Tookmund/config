@@ -1,4 +1,5 @@
 . $HOME/config/aliases
 GOPATH=$HOME/coding/go
-PATH=$PATH:$GOPATH/bin
-export GOPATH PATH
+PLAN9=$HOME/coding/plan9port/
+PATH=$PATH:$GOPATH/bin:$PLAN9/bin
+export PATH GOPATH PLAN9 

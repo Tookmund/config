@@ -1,1 +1,3 @@
 DEBSIGN_KEYID=B59FE5A9
+DEBEMAIL=tookmund@gmail.com
+DEBFULLNAME="Jacob Adams"

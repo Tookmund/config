@@ -10,3 +10,6 @@ for i in profile devscripts xinitrc quiltrc-dpkg nanorc dput.cf lintianrc
 do
 	$1 $i $HOME/.$i
 done
+
+# GPG Configuration File
+$1 gpg.conf $HOME/.gnupg/gpg.conf

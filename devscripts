@@ -1,6 +1,6 @@
-DEBSIGN_KEYID=B59FE5A9
-DEBEMAIL=tookmund@gmail.com
-DEBFULLNAME="Jacob Adams"
-DEBUILD_DPKG_BUILDPACKAGE_OPTS="-us -uc -I -i -j4"
-DEBUILD_LINTIAN_OPTS="-i -I --show-overrides"
+export DEBSIGN_KEYID=B59FE5A9
+export DEBEMAIL=tookmund@gmail.com
+export DEBFULLNAME="Jacob Adams"
+export DEBUILD_DPKG_BUILDPACKAGE_OPTS="-us -uc -I -i -j4"
+export DEBUILD_LINTIAN_OPTS="-i -I --show-overrides"
 

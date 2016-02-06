@@ -1,4 +1,4 @@
 iceweasel
-acme
+xterm -r nano
 icedove
 xscreensaver-command -lock

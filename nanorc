@@ -1,6 +1,6 @@
 set multibuffer
 set autoindent
-
+set mouse
 ## Trailing whitespace
 color ,green "[[:space:]]+$"
 

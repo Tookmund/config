@@ -1,8 +1,7 @@
 set multibuffer
 set autoindent
 set mouse
-## Trailing whitespace
-color ,green "[[:space:]]+$"
+set nohelp
 
 ## .nanorc
 include "/usr/share/nano/nanorc.nanorc"
@@ -39,7 +38,6 @@ include "/usr/share/nano/makefile.nanorc"
 
 ## Patchfile
 include "/usr/share/nano/patch.nanorc"
-
 
 ## Markdown
 include "~/config/markdown.nanorc"

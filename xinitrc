@@ -7,4 +7,4 @@ xscreensaver -no-splash &
 9menu -geometry +0+1010 -file $HOME/config/9menu &
 xsysinfo -g +0+862 -nosmp &
 xman -g +245+1005 &
-exec 9wm -term "xterm -fg white -bg black" 
+exec 9wm -term "rxvt-unicode -fg white -bg black" 

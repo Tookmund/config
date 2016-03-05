@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-scale '/usr/share/wallpapers/joy/contents/images/1920x1080.png' 
+feh  --bg-scale $HOME/config/joy-wallpaper_1920x1080.png

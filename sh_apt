@@ -8,6 +8,7 @@ then
 	alias aptug="sudo apt upgrade"
 	alias apts="apt search"
 	alias apti="sudo apt install"
+	alias aptlu="sudo apt list --upgradable"
 
 else
 	alias aptu="sudo apt-get update"

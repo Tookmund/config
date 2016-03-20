@@ -22,4 +22,4 @@ alias aptp="sudo apt-get purge"
 alias aptar="sudo apt-get autoremove"
 alias aptac="sudo apt-get autoclean"
 # Purge auto-removed files
-alias aptap="dpkg -l | grep ^rc | awk '{print $2}' | sudo xargs dpkg -P"
+alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo dpkg -P"

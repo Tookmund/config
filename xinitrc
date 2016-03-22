@@ -2,7 +2,7 @@ feh  --bg-scale $HOME/config/joy-wallpaper_1920x1080.png &
 xscreensaver -no-splash &
 
 # Washington, DC
-redshift -l 38:-77
+redshift -l 38:-77 &
 
 # Configured for a 1920x1080 display
 xclock -digital -g +1560+1040 &

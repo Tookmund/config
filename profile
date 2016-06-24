@@ -8,4 +8,5 @@ PS1='$(logname)@$(hostname -s)$PWD$ '
 GOPATH=$HOME/coding/go
 PATH=$PATH:$GOPATH/bin
 
+PATH=$PATH:~/bin
 export PATH GOPATH 

@@ -1,4 +1,5 @@
-feh  --bg-scale $HOME/config/joy-wallpaper_1920x1080.png &
+#feh  --bg-scale $HOME/config/joy-wallpaper_1920x1080.png &
+xsetroot -solid webgray &
 xscreensaver -no-splash &
 
 xbacklight -set 40 &
@@ -10,4 +11,4 @@ xclock -digital -g +1560+1040 &
 xsysinfo -g +0+862 -nosmp &
 
 # rxvt-unicode-256color
-exec 9wm -term "urxvt -fg white -bg black" 
+exec 9wm-newcolor -term "urxvt -bg beige" 2> 9wm.log

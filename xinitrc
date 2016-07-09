@@ -10,4 +10,4 @@ xclock -digital -g +1560+1040 &
 xsysinfo -g +0+862 -nosmp &
 
 # rxvt-unicode-256color
-exec 9wm-newcolor -term "urxvt -bg beige" 2> 9wm.log
+exec 9wm-color -border turquoise -term "urxvt -bg beige" 2> 9wm.log

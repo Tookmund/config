@@ -1,5 +1,4 @@
-#feh  --bg-scale $HOME/config/joy-wallpaper_1920x1080.png &
-xsetroot -solid webgray &
+xsetroot -solid darkgray &
 xscreensaver -no-splash &
 
 xbacklight -set 40 &

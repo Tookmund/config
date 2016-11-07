@@ -4,7 +4,7 @@
 if hash apt
 then
 	APT=apt
-	alias apts="sudo apt search"
+	alias apts="apt search"
 	alias aptlu="sudo $APT list --upgradable"
 else
 	APT=apt-get

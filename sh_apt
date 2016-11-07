@@ -9,6 +9,9 @@ then
 	alias apts="apt search"
 	alias apti="sudo apt install"
 	alias aptlu="sudo apt list --upgradable"
+	alias aptp="sudo apt purge"
+	alias aptar="sudo apt autoremove"
+	alias aptac="sudo apt autoclean"
 
 else
 	alias aptu="sudo apt-get update"
@@ -16,10 +19,10 @@ else
 	alias aptug="sudo apt-get upgrade"
 	alias apts="apt-cache search"
 	alias apti="sudo apt-get install"
+	alias aptp="sudo apt-get purge"
+	alias aptar="sudo apt-get autoremove"
+	alias aptac="sudo apt-get autoclean"
 fi
 
-alias aptp="sudo apt-get purge"
-alias aptar="sudo apt-get autoremove"
-alias aptac="sudo apt-get autoclean"
 # Purge auto-removed files
 alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo dpkg -P"

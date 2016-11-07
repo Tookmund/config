@@ -25,4 +25,4 @@ else
 fi
 
 # Purge auto-removed files
-alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo dpkg -P"
+alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo apt purge -y"

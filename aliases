@@ -6,7 +6,7 @@ alias ll='ls -l'
 alias la='ls -a'
 
 alias suspend='sudo pm-suspend'
-alias shutdown='sudo shutdown -hP now'
+alias shutdown='sudo shutdown -P now'
 alias reboot='sudo shutdown -r now'
 
 if [ -f ~/config/sh_apt ]

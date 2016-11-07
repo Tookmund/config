@@ -1,4 +1,4 @@
-xsetroot -solid grey30 &
+xsetroot -solid grey40 &
 xscreensaver -no-splash &
 
 xbacklight -set 40 &

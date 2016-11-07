@@ -3,26 +3,20 @@
 
 if hash apt
 then
-	alias aptu="sudo apt update"
-	alias aptdu="sudo apt full-upgrade"
-	alias aptug="sudo apt upgrade"
-	alias apts="apt search"
-	alias apti="sudo apt install"
-	alias aptlu="sudo apt list --upgradable"
-	alias aptp="sudo apt purge"
-	alias aptar="sudo apt autoremove"
-	alias aptac="sudo apt autoclean"
-
+	APT=apt
+	alias apts="sudo apt search"
+	alias aptlu="sudo $APT list --upgradable"
 else
-	alias aptu="sudo apt-get update"
-	alias aptdu="sudo apt-get dist-upgrade"
-	alias aptug="sudo apt-get upgrade"
+	APT=apt-get
 	alias apts="apt-cache search"
-	alias apti="sudo apt-get install"
-	alias aptp="sudo apt-get purge"
-	alias aptar="sudo apt-get autoremove"
-	alias aptac="sudo apt-get autoclean"
 fi
+alias aptu="sudo $APT update"
+alias aptdu="sudo $APT dist-upgrade"
+alias aptug="sudo $APT upgrade"
+alias apti="sudo $APT install"
+alias aptp="sudo $APT purge"
+alias aptar="sudo $APT autoremove"
+alias aptac="sudo $APT autoclean"
 
 # Purge auto-removed files
 alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo apt purge -y"

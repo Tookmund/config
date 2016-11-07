@@ -7,7 +7,7 @@ xbacklight -set 40 &
 xclock -digital -g +1560+1040 &
 wmbattery -w 1 -g +1850+1020 &
 9menu -geometry +0+1010 -file $HOME/config/9menu &
-xsysinfo -g +0+862 -nosmp &
+xsysinfo -g +0+782 &
 
 #exec openbsd-cwm
 # rxvt-unicode-256color

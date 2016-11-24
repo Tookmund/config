@@ -1,15 +1,13 @@
 alias lock='xscreensaver-command -lock'
 
-alias dquilt="quilt --quiltrc=${HOME}/.quiltrc-dpkg"
+alias dquilt="quilt --quiltrc=${HOME}/config/quiltrc-dpkg"
 
 alias ll='ls -l'
 alias la='ls -a'
 
 alias suspend='sudo pm-suspend'
+alias hibernate='sudo pm-hibernate'
 alias shutdown='sudo shutdown -P now'
 alias reboot='sudo shutdown -r now'
 
-if [ -f ~/config/sh_apt ]
-then
-	. ~/config/sh_apt
-fi 
+. $HOME/config/sh_apt

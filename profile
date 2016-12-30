@@ -9,4 +9,6 @@ GOPATH=$HOME/coding/go
 PATH=$PATH:$GOPATH/bin
 
 PATH=$PATH:~/bin
-export PATH GOPATH 
+EDITOR=vi
+
+export PATH GOPATH EDITOR

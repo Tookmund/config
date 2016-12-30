@@ -1,0 +1,4 @@
+Explanation: Don't install unstable packages by default
+Package: *
+Pin: release a=unstable
+Pin-Priority: 50

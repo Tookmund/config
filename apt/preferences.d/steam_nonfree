@@ -1,0 +1,4 @@
+Explanation: Enable package steam from non-free tree
+Package: steam:i386
+Pin: release o=Debian,a=testing,l=Debian,c=non-free
+Pin-Priority: 600

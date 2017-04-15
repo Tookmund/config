@@ -4,7 +4,12 @@
 
 while true
 do
-	VOL="Vol: $(amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/')"
+	if amixer get Master | grep off > /dev/null
+	then
+		VOL="Vol: --%"
+	else
+		VOL="Vol: $(amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/')"
+	fi
 	LOCALTIME=$(date +%Y-%m-%d\ %H:%M)
 	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
 	TEMP="$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))C"

@@ -14,9 +14,13 @@ do
 	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
 	TEMP="$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))C"
 
-	if acpi -a | grep off-line > /dev/null
+	if acpi | grep Battery > /dev/null
 	then
 		BAT="Bat: $(acpi -b | awk '{ print $4 " " $5 }' | tr -d ',')"
+		if acpi | grep Charging > /dev/null
+		then
+			BAT="$BAT CHG"
+		fi
 		xsetroot -name "$IP $BAT $VOL $TEMP $LOCALTIME"
 	else
 		xsetroot -name "$IP $VOL $TEMP $LOCALTIME" 

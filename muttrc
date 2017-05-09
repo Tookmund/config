@@ -8,7 +8,6 @@ set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"
 
 set smtp_url = 'smtps://tookmund@smtp.gmail.com'
-set smtp_pass = 'tookmundnottoukmond'
 set record=""
 set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
 

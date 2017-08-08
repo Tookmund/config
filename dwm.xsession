@@ -1,4 +1,4 @@
-dwmstatus.sh &
+$HOME/config/dwmstatus.sh &
 uxterm &
 firefox &
 xscreensaver -no-splash &

@@ -1,5 +1,5 @@
 . $HOME/config/aliases
-. $HOME/.devscripts
+. $HOME/config/devscripts
 
 # Borrowed from 
 # http://www.unixmantra.com/2013/05/setting-custom-prompt-in-ksh.html

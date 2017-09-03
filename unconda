@@ -1,0 +1,6 @@
+case "$PATH" in
+*anaconda* ) 	export PATH=`echo $PATH | cut -d ":" -f2-` 
+		;;
+* ) 		echo "Anaconda is not in your path" 
+		;;
+esac

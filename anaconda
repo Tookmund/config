@@ -1,0 +1,2 @@
+#!/bin/sh
+export PATH=/home/jacob/anaconda3/bin:$PATH

@@ -1,0 +1,5 @@
+[Match]
+Name=wl0
+
+[Network]
+DHCP=ipv4

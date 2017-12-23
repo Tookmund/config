@@ -1,4 +1,4 @@
-export DEBSIGN_KEYID=B59FE5A9
+export DEBSIGN_KEYID=0x3F90059E1AFDDD53
 export DEBEMAIL=tookmund@gmail.com
 export DEBFULLNAME="Jacob Adams"
 export DEBUILD_DPKG_BUILDPACKAGE_OPTS="-us -uc -I -i -j4"

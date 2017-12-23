@@ -5,9 +5,9 @@ alias dquilt="quilt --quiltrc=${HOME}/config/quiltrc-dpkg"
 alias ll='ls -l'
 alias la='ls -a'
 
-alias suspend='sudo pm-suspend'
-alias hibernate='sudo pm-hibernate'
-alias shutdown='sudo shutdown -P now'
-alias reboot='sudo shutdown -r now'
+alias suspend='systemctl suspend'
+alias hibernate='systemctl hibernate'
+alias shutdown='/sbin/shutdown now'
+alias reboot='/sbin/shutdown -r now'
 
 . $HOME/config/sh_apt

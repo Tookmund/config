@@ -1,0 +1,15 @@
+set imap_user = 'tookmund@gmail.com'
+set from="tookmund@gmail.com"
+source .muttpasswd
+
+set folder = imaps://imap.gmail.com/
+set spoolfile = +INBOX
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+
+set smtp_url = 'smtps://tookmund@smtp.gmail.com'
+set record=""
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+
+macro index,pager y "<save-message>=[Gmail]/All<tab><enter><enter>" "Archive"
+macro index <f5> "<imap-fetch-mail>" "Refresh IMAP"

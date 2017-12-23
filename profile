@@ -12,7 +12,7 @@ PATH=$PATH:~/bin
 EDITOR=vi
 
 GPG_TTY="$(tty)"
-SSH_AUTH_SOCK="/run/user/$(id -u)/gnupg/S.gpg-agent.ssh"
+SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 export PATH GOPATH EDITOR GPG_TTY SSH_AUTH_SOCK
 

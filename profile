@@ -12,3 +12,5 @@ PATH=$PATH:~/bin
 EDITOR=vi
 
 export PATH GOPATH EDITOR
+
+. $HOME/config/custom

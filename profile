@@ -11,6 +11,11 @@ PATH=$PATH:$GOPATH/bin
 PATH=$PATH:~/bin
 EDITOR=vi
 
-export PATH GOPATH EDITOR
+GPG_TTY="$(tty)"
+SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+
+export PATH GOPATH EDITOR GPG_TTY SSH_AUTH_SOCK
+
+gpgconf --launch gpg-agent
 
 . $HOME/config/custom

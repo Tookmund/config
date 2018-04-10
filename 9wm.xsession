@@ -11,4 +11,4 @@ xsysinfo -g +0+782 &
 
 #exec openbsd-cwm
 # rxvt-unicode-256color
-exec 9wm -debug -active "#55AAAA" -inactive "#9EEEEE" -term "urxvt -bg beige" 2> 9wm.log > 9wm.log
+exec 9wm -debug -active "#55AAAA" -inactive "#9EEEEE" -term x-terminal-emulator 2> 9wm.log > 9wm.log

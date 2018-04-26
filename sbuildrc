@@ -114,6 +114,10 @@ $sbuild_mode = "user";
 
 $build_arch_all = 1;
 
+# Lintian
+$run_lintian = 1;
+$lintian_opts = ['-i', '-I', '--pedantic'];
+
 # don't remove this, Perl needs it:
 1;
 

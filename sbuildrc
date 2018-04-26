@@ -118,6 +118,8 @@ $build_arch_all = 1;
 $run_lintian = 1;
 $lintian_opts = ['-i', '-I', '--pedantic'];
 
+$source_only_changes = 1;
+
 # don't remove this, Perl needs it:
 1;
 

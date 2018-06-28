@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for jacob on Wed Jun 27 17:04:35 2018.
+# Written by xscreensaver-demo 5.36 for jacob on Thu Jun 28 11:11:39 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -17,7 +17,7 @@ demoCommand:	xscreensaver-demo
 prefsCommand:	xscreensaver-demo -prefs
 nice:		10
 memoryLimit:	0
-fade:		True
+fade:		False
 unfade:		False
 fadeSeconds:	0:00:03
 fadeTicks:	20
@@ -26,7 +26,7 @@ ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	True
 dpmsQuickOff:	True
-dpmsStandby:	0:01:00
+dpmsStandby:	0:30:00
 dpmsSuspend:	1:00:00
 dpmsOff:	4:00:00
 grabDesktopImages:  False

@@ -15,3 +15,5 @@ set sw=4
 set colorcolumn=80
 
 set nohlsearch
+
+set spelllang=en_us

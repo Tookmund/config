@@ -173,3 +173,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 #Lock
 bindsym $mod+Control+l exec xscreensaver-command -lock
+
+# Switch user
+bindsym $mod+Control+u exec dm-tool switch-to-greeter

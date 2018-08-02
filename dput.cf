@@ -1,4 +1,4 @@
-[mentors-http]
+[mentors]
 fqdn = mentors.debian.net
 incoming = /upload
 method = https

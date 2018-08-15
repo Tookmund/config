@@ -1,0 +1,12 @@
+#!/bin/sh
+
+case $1 in
+	analog)
+		pactl set-card-profile 0 output:analog-stereo
+		;;
+	hdmi)
+		pactl set-card-profile 0 output:hdmi-stereo
+		;;
+	*)
+		echo "Valid options are: analog, hdmi"
+esac

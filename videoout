@@ -1,0 +1,22 @@
+#!/bin/sh
+
+case $1 in
+	list)
+		xrandr -q | grep connected
+		;;
+	off)
+		xrandr --output $2 --off
+		;;
+	on)
+		xrandr --output $2 --auto
+		;;
+	sort)
+		xrandr --output $2 --left-of $3
+		;;
+	*)
+		echo "Valid options are:"
+		echo "list"
+		echo "off [output]"
+		echo "on [output]"
+		echo "sort [left] [right]"
+esac

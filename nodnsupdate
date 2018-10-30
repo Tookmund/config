@@ -1,0 +1,6 @@
+#!/bin/sh
+# /etc/dhcp/dhclient-enter-hooks.d/nodnsupdate
+
+make_resolv_conf(){
+	:
+}

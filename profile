@@ -10,7 +10,7 @@ PATH="$PATH:$GOPATH/bin"
 
 PATH="$PATH:$HOME/.cargo/bin"
 
-PATH="$PATH:~/bin:."
+PATH="$PATH:$HOME/bin:."
 
 GPG_TTY="$(tty)"
 SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"

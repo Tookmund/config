@@ -2,7 +2,7 @@
 Description=dhclient on %I
 Wants=network.target
 Before=network.target
-After=wpa-supplicant@%I.service
+After=wpa-supplicant@%i.service
 
 [Service]
 ExecStart=/sbin/dhclient -pf /run/dhclient@%i/dhclient.pid -d %I

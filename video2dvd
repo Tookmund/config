@@ -1,0 +1,23 @@
+#!/bin/sh
+# Requires ffmpeg, dvdauthor, mkisofs, and wodim
+
+ffmpeg -i "$1" -target ntsc-dvd "$1.vob"
+
+cat << EOF > "$1.xml"
+<dvdauthor>
+    <vmgm />
+    <titleset>
+        <titles>
+            <pgc>
+                <vob file="$1.vob" />
+            </pgc>
+        </titles>
+    </titleset>
+</dvdauthor>
+EOF
+
+VIDEO_FORMAT=NTSC dvdauthor -o "$1.dvd/" -x "$1.xml"
+
+mkisofs -dvd-video -udf -o "$1.iso" "$1.dvd/"
+
+cdrecord -v dev=/dev/sr0 "$1.iso"

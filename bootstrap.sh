@@ -8,7 +8,7 @@
 
 MV=${1:-ln -s}
 
-for i in profile devscripts quiltrc-dpkg nanorc dput.cf lintianrc
+for i in profile devscripts quiltrc-dpkg nanorc dput.cf lintianrc xscreensaver exrc
 do
 	$MV "$PWD/$i" "$HOME/.$i"
 done

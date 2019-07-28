@@ -20,3 +20,6 @@ $1 "$PWD/i3status.conf" "$HOME/.config/i3status/config"
 # GPG Configuration File
 $1 "$PWD/gpg.conf" "$HOME/.gnupg/gpg.conf"
 $1 "$PWD/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
+#Neovim
+$1 "$PWD/init.vim" "$HOME/.config/nvim/init.vim"

@@ -1,0 +1,10 @@
+#!/bin/sh
+case $1 in
+	start)
+		/usr/sbin/rfkill unblock bluetooth
+		bluetoothctl
+		;;
+	kill)
+		/usr/sbin/rfkill block bluetooth
+		;;
+esac

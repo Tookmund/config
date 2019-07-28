@@ -19,3 +19,5 @@ set nohlsearch
 set spelllang=en_us
 
 set clipboard=unnamedplus
+
+set nomodeline

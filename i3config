@@ -165,7 +165,7 @@ new_window 1pixel
 #Audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
-bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse -q sset Master toggle
 
 #Brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10

@@ -174,5 +174,15 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 #Lock
 bindsym $mod+Control+l exec xscreensaver-command -lock
 
+#Web Browser
+bindsym $mod+Control+x exec x-www-browser
+bindsym $mod+Control+c exec chromium
+
+#File Manager
+bindsym $mod+Control+m exec spacefm
+
+#PDF Viewer
+bindsym $mod+Control+v exec evince
+
 # Switch user
 bindsym $mod+Control+u exec dm-tool switch-to-greeter

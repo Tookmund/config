@@ -13,6 +13,13 @@ do
 	$MV "$PWD/$i" "$HOME/.$i"
 done
 
+mkdir -p "$HOME/bin"
+
+for i in bin/*
+do
+	$MV "$PWD/$i" "$HOME/$i"
+done
+
 # i3wm
 $MV "$PWD/i3.xsession" "$HOME/.xsession"
 mkdir -p "$HOME/.config/i3/"

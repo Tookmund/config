@@ -15,10 +15,13 @@ done
 
 # i3wm
 $MV "$PWD/i3.xsession" "$HOME/.xsession"
+mkdir -p "$HOME/.config/i3/"
 $MV "$PWD/i3config" "$HOME/.config/i3/config"
+mkdir -p "$HOME/.config/i3status/"
 $MV "$PWD/i3status.conf" "$HOME/.config/i3status/config"
 
 # GPG Configuration File
+mkdir -p "$HOME/.gnupg/"
 $MV "$PWD/gpg.conf" "$HOME/.gnupg/gpg.conf"
 $MV "$PWD/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 

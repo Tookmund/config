@@ -176,8 +176,11 @@ bindsym $mod+Control+l exec xscreensaver-command -lock
 
 #Web Browser
 bindsym $mod+Control+x exec x-www-browser
+assign [class="Firefox"] workspace 2
 bindsym $mod+Control+c exec chromium
+assign [class="Chromium"] workspace 2
 
+assign [class="Thunderbird"] workspace 3
 #File Manager
 bindsym $mod+Control+m exec spacefm
 

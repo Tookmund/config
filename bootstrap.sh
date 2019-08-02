@@ -34,6 +34,7 @@ $MV "$PWD/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 $MV "$PWD/dirmngr.conf" "$HOME/.gnupg/dirmngr.conf"
 
 #Neovim
+mkdir -p "$HOME/.config/nvim"
 $MV "$PWD/init.vim" "$HOME/.config/nvim/init.vim"
 
 #youtube-dl

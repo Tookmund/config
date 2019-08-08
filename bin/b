@@ -5,6 +5,8 @@ case $1 in
 		bluetoothctl
 		;;
 	kill)
+		printf "disconnect\n" | bluetoothctl &
+		sleep 3
 		/usr/sbin/rfkill block bluetooth
 		;;
 esac

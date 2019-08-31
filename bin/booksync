@@ -1,0 +1,3 @@
+#!/bin/sh
+rsync --progress -rtvuz ~/Calibre\ Library/ azaz:/srv/nas/Books/
+rsync --progress -rtvuz azaz:/srv/nas/Books/ ~/Calibre\ Library/

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Studio
+Exec=./studio.sh
+Path=/opt/android-studio/bin

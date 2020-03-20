@@ -2,5 +2,5 @@ export DEBSIGN_KEYID=0x3F90059E1AFDDD53
 export DEBEMAIL=tookmund@gmail.com
 export DEBFULLNAME="Jacob Adams"
 export DEBUILD_DPKG_BUILDPACKAGE_OPTS="-us -uc -I -i -j4"
-export DEBUILD_LINTIAN_OPTS="-i -I --show-overrides"
+export DEBUILD_LINTIAN_OPTS="-i -E --show-overrides"
 

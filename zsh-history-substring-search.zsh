@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 ##############################################################################
 #
+#
+# https://github.com/zsh-users/zsh-history-substring-search
+#
 # Copyright (c) 2009 Peter Stephenson
 # Copyright (c) 2011 Guido van Steen
 # Copyright (c) 2011 Suraj N. Kurapati

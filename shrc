@@ -1,4 +1,4 @@
-if [ $0 = "/bin/zsh" ] || [ $0 = "zsh" ]
+if [ "$0" = "/bin/zsh" ] || [ "$0" = "zsh" ] || [ "$0" = "-zsh" ]
 then
 	# VIM mode
 	bindkey -v

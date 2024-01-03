@@ -1,4 +1,4 @@
-if [ $0 = "/bin/zsh" ]
+if [ $0 = "/bin/zsh" ] || [ $0 = "zsh" ]
 then
 	bindkey "^[[1;5C" forward-word
 	bindkey "^[[1;5D" backward-word

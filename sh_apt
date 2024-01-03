@@ -6,9 +6,11 @@ then
 	APT=apt
 	alias apts="apt search"
 	alias aptlu="sudo $APT list --upgradable"
+	alias aptap="sudo apt autoremove --purge"
 else
 	APT=apt-get
 	alias apts="apt-cache search"
+	alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo apt purge -y"
 fi
 alias aptu="sudo $APT update"
 alias aptdu="sudo $APT dist-upgrade"
@@ -18,5 +20,3 @@ alias aptp="sudo $APT purge"
 alias aptar="sudo $APT autoremove"
 alias aptac="sudo $APT autoclean"
 
-# Purge auto-removed files
-alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo apt purge -y"

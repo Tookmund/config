@@ -1,4 +1,3 @@
-. $HOME/config/shrc
 . $HOME/config/devscripts
 
 

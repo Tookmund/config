@@ -20,12 +20,20 @@ do
 	$MV "$PWD/$i" "$HOME/$i"
 done
 
+# ZSH
+$MV "$PWD/profile" "$HOME/.zprofile"
+$MV "$PWD/aliases" "$HOME/.zshrc"
+
 # i3wm
 $MV "$PWD/i3.xsession" "$HOME/.xsession"
 mkdir -p "$HOME/.config/i3/"
 $MV "$PWD/i3config" "$HOME/.config/i3/config"
 mkdir -p "$HOME/.config/i3status/"
 $MV "$PWD/i3status.conf" "$HOME/.config/i3status/config"
+
+# sway
+mkdir -p "$HOME/.config/sway/"
+$MV "$PWD/swayconfig" "$HOME/.config/sway/config"
 
 # GPG Configuration Files
 mkdir -p "$HOME/.gnupg/"

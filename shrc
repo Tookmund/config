@@ -2,7 +2,18 @@ if [ $0 = "/bin/zsh" ]
 then
 	bindkey "^[[1;5C" forward-word
 	bindkey "^[[1;5D" backward-word
+
 	source $HOME/config/zsh-history-substring-search.zsh
+	# Keys are weird
+	bindkey '^[[A' history-substring-search-up
+	bindkey '^[OA' history-substring-search-up
+	bindkey '^[OB' history-substring-search-down
+
+	setopt INC_APPEND_HISTORY
+	export SAVEHIST=1000000
+	export HISTFILE=$HOME/.zsh_history
+	export HISTFILESIZE=1000000
+	export HISTSIZE=1000000
 	PROMPT="%n@%m%d%% "
 else
 	# Borrowed from

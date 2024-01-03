@@ -1,9 +1,10 @@
 . $HOME/config/aliases
 . $HOME/config/devscripts
 
-# Borrowed from 
+# Borrowed from
 # http://www.unixmantra.com/2013/05/setting-custom-prompt-in-ksh.html
 PS1='$(id -un)@$(hostname -s)$PWD$ '
+PROMPT="%n@%m%d%% "
 
 GOPATH=$HOME/coding/go
 PATH="$PATH:$GOPATH/bin"
@@ -17,7 +18,7 @@ SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 EDITOR=vi
 
-export PATH GOPATH EDITOR GPG_TTY SSH_AUTH_SOCK
+export PS1 PROMPT PATH GOPATH EDITOR GPG_TTY SSH_AUTH_SOCK
 
 gpgconf --launch gpg-agent
 

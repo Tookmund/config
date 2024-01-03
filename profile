@@ -22,4 +22,3 @@ export PS1 PROMPT PATH GOPATH EDITOR GPG_TTY SSH_AUTH_SOCK
 
 gpgconf --launch gpg-agent
 
-. $HOME/config/custom

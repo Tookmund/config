@@ -1,10 +1,6 @@
-. $HOME/config/aliases
+. $HOME/config/shrc
 . $HOME/config/devscripts
 
-# Borrowed from
-# http://www.unixmantra.com/2013/05/setting-custom-prompt-in-ksh.html
-PS1='$(id -un)@$(hostname -s)$PWD$ '
-PROMPT="%n@%m%d%% "
 
 GOPATH=$HOME/coding/go
 PATH="$PATH:$GOPATH/bin"

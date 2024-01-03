@@ -1,3 +1,15 @@
+if [ $0 = "/bin/zsh" ]
+then
+	bindkey "^[[1;5C" forward-word
+	bindkey "^[[1;5D" backward-word
+	source $HOME/config/zsh-history-substring-search.zsh
+	PROMPT="%n@%m%d%% "
+else
+	# Borrowed from
+	# http://www.unixmantra.com/2013/05/setting-custom-prompt-in-ksh.html
+	PS1='$(id -un)@$(hostname -s)$PWD$ '
+fi
+
 alias lock='xscreensaver-command -lock'
 
 alias dquilt="quilt --quiltrc=${HOME}/config/quiltrc-dpkg"

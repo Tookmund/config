@@ -22,7 +22,11 @@ done
 
 # ZSH
 $MV "$PWD/profile" "$HOME/.zprofile"
-$MV "$PWD/aliases" "$HOME/.zshrc"
+
+for SHRC in .mkshrc .zshrc
+do
+	$MV "$PWD/shrc" "$HOME/$SHRC"
+done
 
 # i3wm
 $MV "$PWD/i3.xsession" "$HOME/.xsession"

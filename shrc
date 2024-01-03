@@ -1,5 +1,8 @@
 if [ $0 = "/bin/zsh" ] || [ $0 = "zsh" ]
 then
+	# VIM mode
+	bindkey -v
+
 	bindkey "^[[1;5C" forward-word
 	bindkey "^[[1;5D" backward-word
 

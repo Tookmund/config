@@ -9,7 +9,6 @@ then
 	bindkey '^[OA' history-substring-search-up
 	bindkey '^[OB' history-substring-search-down
 
-	setopt INC_APPEND_HISTORY
 	export SAVEHIST=1000000
 	export HISTFILE=$HOME/.zsh_history
 	export HISTFILESIZE=1000000

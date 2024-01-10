@@ -114,10 +114,12 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "swaynag -t warning -m 'Do you really want to exit Sway? This will end your Wayland session.' -b 'Exit Sway' 'sway exit'"
+
+# exit sway
+bindsym $mod+Shift+e exec "swaynag -t warning -m 'Do you really want to exit Sway?' -b 'Exit Sway' 'sway exit'"
+
+bindsym $mod+Shift+s exec "swaynag -t error -m 'Do you really want to shutdown?' -b 'Shutdown' '/sbin/shutdown now'"
+bindsym $mod+Shift+r exec "swaynag -t error -m 'Do you really want to reboot?' -b 'Reboot' '/sbin/shutdown -r now'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

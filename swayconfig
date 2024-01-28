@@ -178,4 +178,5 @@ bindsym $mod+Control+l exec swaylock
 #Web Browser
 bindsym $mod+Control+x exec firefox
 assign [app_id="Firefox-esr"] workspace 2
+assign [app_id="chromium"] workspace 2
 

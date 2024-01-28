@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+SLEEP_TARGETS="sleep.target suspend.target hibernate.target hybrid-sleep.target"
+if readlink /etc/systemd/system/sleep.target > /dev/null
+then
+	CMD=unmask
+else
+	CMD=mask
+fi
+
+sudo systemctl "$CMD" $SLEEP_TARGETS > /dev/null 2>&1
+sudo systemctl list-unit-files $SLEEP_TARGETS

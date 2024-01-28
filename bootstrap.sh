@@ -8,7 +8,7 @@
 
 MV=${1:-ln -s}
 
-for i in profile devscripts quiltrc-dpkg nanorc dput.cf lintianrc xscreensaver exrc
+for i in profile devscripts quiltrc-dpkg nanorc dput.cf lintianrc xscreensaver exrc tmux.conf
 do
 	$MV "$PWD/$i" "$HOME/.$i"
 done

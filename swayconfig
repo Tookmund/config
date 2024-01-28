@@ -9,7 +9,10 @@ input type:touchpad {
     natural_scroll enabled
 }
 
-output eDP-1 scale 1.2
+output eDP-1 {
+	scale 1.2
+	background ~/config/joy.png fill
+}
 
 set $mod Mod4
 

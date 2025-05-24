@@ -180,3 +180,14 @@ bindsym $mod+Control+x exec firefox
 assign [app_id="firefox-esr"] workspace number 2
 assign [app_id="chromium"] workspace number 2
 
+#Screenshot
+bindsym {
+    $mod+Ctrl+p  exec grim -g "$(slurp)" - | wl-copy
+
+    # Capture the currently active output
+    #$mod+Print       exec grim save output
+    # Capture the currently active window
+    #$mod+Alt+Print   exec grim save active
+    # Select and capture a custom rectangular area
+    #$mod+Ctrl+Print  exec grim save area
+}

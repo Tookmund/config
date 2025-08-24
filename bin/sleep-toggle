@@ -9,5 +9,5 @@ else
 	CMD=mask
 fi
 
-sudo systemctl "$CMD" $SLEEP_TARGETS > /dev/null 2>&1
-sudo systemctl list-unit-files $SLEEP_TARGETS
+doas systemctl "$CMD" $SLEEP_TARGETS > /dev/null 2>&1
+doas systemctl list-unit-files $SLEEP_TARGETS

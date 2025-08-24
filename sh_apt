@@ -5,18 +5,18 @@ if hash apt
 then
 	APT=apt
 	alias apts="apt search"
-	alias aptlu="sudo $APT list --upgradable"
-	alias aptap="sudo apt autoremove --purge"
+	alias aptlu="doas $APT list --upgradable"
+	alias aptap="doas apt autoremove --purge"
 else
 	APT=apt-get
 	alias apts="apt-cache search"
-	alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs sudo apt purge -y"
+	alias aptap="dpkg -l | grep ^rc | cut -d ' ' -f 3 | xargs doas apt purge -y"
 fi
-alias aptu="sudo $APT update"
-alias aptdu="sudo $APT dist-upgrade"
-alias aptug="sudo $APT upgrade"
-alias apti="sudo $APT install"
-alias aptp="sudo $APT purge"
-alias aptar="sudo $APT autoremove"
-alias aptac="sudo $APT autoclean"
+alias aptu="doas $APT update"
+alias aptdu="doas $APT dist-upgrade"
+alias aptug="doas $APT upgrade"
+alias apti="doas $APT install"
+alias aptp="doas $APT purge"
+alias aptar="doas $APT autoremove"
+alias aptac="doas $APT autoclean"
 

@@ -3,5 +3,5 @@ if [ $# -eq 0 ]
   then
     cat /sys/class/backlight/intel_backlight/brightness
   else
-    sudo sh -c "echo '$1' > /sys/class/backlight/intel_backlight/brightness"
+    doas sh -c "echo '$1' > /sys/class/backlight/intel_backlight/brightness"
 fi

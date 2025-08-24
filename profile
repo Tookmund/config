@@ -6,7 +6,11 @@ PATH="$PATH:$GOPATH/bin"
 
 PATH="$PATH:$HOME/.cargo/bin"
 
+# BSD-style paths
+PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
+
 PATH="$PATH:$HOME/bin:."
+
 
 GPG_TTY="$(tty)"
 SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"

@@ -32,7 +32,7 @@ vim.lsp.config['gopls'] = {
 	  settings = {
 	    gopls = {
 	      analyses = {
-		unusedparams = true,
+			unusedparams = true,
 	      },
 	      staticcheck = true,
 	      gofumpt = true,
@@ -41,6 +41,68 @@ vim.lsp.config['gopls'] = {
 }
 
 vim.lsp.enable('gopls')
+
+vim.lsp.config['rust_analyzer'] = {
+	cmd = { 'rust-analyzer' },
+	filetypes = { 'rust' },
+	  settings = {
+	    rust_analyzer = {
+            imports = {
+				granularity = {
+					group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+		},
+	  },
+}
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+	pattern = "*.rs",
+	callback = function()
+		vim.lsp.buf.format({ async = false })
+	end
+})
+
+vim.lsp.enable('rust_analyzer')
+
+vim.lsp.config['lua_ls'] = {
+  -- Command and arguments to start the server.
+  cmd = { 'lua-language-server' },
+  -- Filetypes to automatically attach to.
+  filetypes = { 'lua' },
+  -- Sets the "workspace" to the directory where any of these files is found.
+  -- Files that share a root directory will reuse the LSP server connection.
+  -- Nested lists indicate equal priority, see |vim.lsp.Config|.
+  root_markers = { { '.luarc.json', '.luarc.jsonc' }, '.git' },
+  -- Specific settings to send to the server. The schema is server-defined.
+  -- Example: https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'Lua 5.4',
+      }
+    }
+  }
+}
+
+vim.lsp.enable('lua_ls')
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+	pattern = "*.lua",
+	callback = function()
+		vim.lsp.buf.format({ async = false })
+	end
+})
+
 
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
   pattern = "*.go",
@@ -69,3 +131,4 @@ vim.diagnostic.enable = true
 vim.diagnostic.config({
 	virtual_lines = true,
 })
+

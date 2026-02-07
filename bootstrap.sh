@@ -47,7 +47,7 @@ $MV "$PWD/dirmngr.conf" "$HOME/.gnupg/dirmngr.conf"
 
 #Neovim
 mkdir -p "$HOME/.config/nvim"
-$MV "$PWD/init.vim" "$HOME/.config/nvim/init.vim"
+$MV "$PWD/init.lua" "$HOME/.config/nvim/init.lua"
 
 #youtube-dl
 mkdir -p "$HOME/.config/youtube-dl"

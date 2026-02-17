@@ -9,6 +9,9 @@ PATH="$PATH:$HOME/.cargo/bin"
 # BSD-style paths
 PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
 
+# lua-language-server
+PATH="$PATH:$HOME/bin/lua-language-server/bin:$HOME/bin:."
+
 PATH="$PATH:$HOME/bin:."
 
 
